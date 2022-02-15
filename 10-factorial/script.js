@@ -8,7 +8,11 @@
 */
 
 function factorial(n) {
-    // Напишите код здесь
+    let result = 1;
+    for (n; n > 1; n--) {
+        result *= n;
+    }
+    return result;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:

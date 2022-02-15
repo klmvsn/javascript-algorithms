@@ -9,7 +9,7 @@
 */
 
 function sumOfTwo(arr, sum) {
-    // Напишите код здесь
+    return arr.some(item => arr.includes(sum - item));
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:

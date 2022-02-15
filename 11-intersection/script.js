@@ -8,7 +8,15 @@
 */
 
 function intersection(arr1, arr2) {
-    // Напишите код здесь
+    arr1.sort();
+    arr2.sort();
+    const result = [];
+    for (let i = 0; i < arr1.length; i++) {
+        if (arr1[i] === arr2[i] && !result.includes(arr1[i])) {
+            result.push(arr1[i]);
+        }
+    }
+    return result;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:

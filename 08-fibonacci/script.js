@@ -9,7 +9,15 @@
 */
 
 function fibonacci(n) {
-    // Напишите код здесь
+    let previous1 = 0;
+    let previous2 = 1;
+    let sum = 1;
+    for (let i = 1; i < n; i++) {
+        sum = previous1 + previous2;
+        previous1 = previous2;
+        previous2 = sum;
+    }
+    return previous1;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
